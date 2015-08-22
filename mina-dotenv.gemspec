@@ -5,7 +5,7 @@ require 'mina/dotenv/version'
 
 Gem::Specification.new do |spec|
   spec.name = 'mina-dotenv'
-  spec.version = Mina::Dotenv.version
+  spec.version = Mina::Dotenv::VERSION::STRING
   spec.authors = ['Stanko Krtalić Rusendić']
   spec.email = ['stanko.krtalic@gmail.com']
 
