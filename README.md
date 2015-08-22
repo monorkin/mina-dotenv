@@ -30,6 +30,8 @@ invoke :'dotenv:push'
 
 Your development machine and your server will often need different keys to run your app. Therefore a `:dotenv_location` variable exist to define which `.env` file to push to the server.
 
+__Important:__ The `:dotenv_location` defaults to `.env`
+
 To change which `.env` file to push add this line your `deploy.rb` file:
 
 ```Ruby
