@@ -86,7 +86,13 @@ If no local `.env` file is found a blank one will be created on the server.
 
 ### Pull
 
-The pull task uses the `scp` command to retrieve the `.env` file from the server. __Note:__ It will take all configuration from your `deploy.rb` file! It is intended to be used from the terminal like this:
+The pull task uses the `scp` command to retrieve the `.env` file from the server.
+
+__Note:__ It will take all configuration from your `deploy.rb` file!
+
+__Important:__ It will add the downloaded file to your `.gitignore` file!
+
+It is intended to be used from the terminal like this:
 
 ```
 mina dotenv:pull
