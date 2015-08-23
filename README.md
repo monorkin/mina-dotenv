@@ -78,10 +78,20 @@ end
 
 ## What it does
 
-### Tasks
-
-#### Push
+### Push
 
 The push task will look for the '.env' file specified in the `:dotenv_location` variable. If found it will copy it's content and echo it to an `.env` file located in the `shared` folder location you your app's deploy location. And symlink it to the root of the newest release.
 
 If no local `.env` file is found a blank one will be created on the server.
+
+### Pull
+
+The pull task uses the `scp` command to retrieve the `.env` file from the server. It will take all configuration from the `deploy.rb` file! It is intended to be used from the terminal like this:
+
+```
+mina dotenv:pull
+```
+
+## Contribution
+
+If you have ideas or feature requests please feel free to open an issue on [this Github page](https://github.com/Stankec/mina-dotenv/issues). Pull requests are welcome also :smile:
