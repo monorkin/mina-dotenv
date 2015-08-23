@@ -86,7 +86,7 @@ If no local `.env` file is found a blank one will be created on the server.
 
 ### Pull
 
-The pull task uses the `scp` command to retrieve the `.env` file from the server.
+The pull task uses [scp](https://www.wikiwand.com/en/Secure_copy)  to retrieve the `.env` file from the server.
 
 __Note:__ It will take all configuration from your `deploy.rb` file!
 
