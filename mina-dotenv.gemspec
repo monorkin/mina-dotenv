@@ -10,7 +10,9 @@ Gem::Specification.new do |spec|
   spec.email = ['stanko.krtalic@gmail.com']
 
   spec.summary = 'Dotenv tasks for mina'
-  spec.description = 'Dotenv tasks for mina'
+  spec.description = 'Alleviate the need to SSH to your server and setup an '\
+                     '.env file manually there. This plugin simply copies '\
+                     'your local .env to your server'
 
   spec.homepage = 'https://github.com/Stankec/mina-dotenv'
   spec.license = 'MIT'
