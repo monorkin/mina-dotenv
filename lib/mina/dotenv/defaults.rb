@@ -1,1 +1,1 @@
-set_default :dotenv_location, '.env'
+set :dotenv_location, '.env'
